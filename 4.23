@@ -1,0 +1,12 @@
+# Define your function here 
+#user_laps = float(input())
+def laps_to_miles(user_laps):
+    user_miles = 0
+    if user_laps > 0:
+        user_miles = (user_laps * 0.25)
+    return user_miles
+if __name__ == '__main__':
+    # Type your code here. Your code must call the function. 
+    user_laps = float(input())
+    if user_laps > 0:
+        print(f'{laps_to_miles(user_laps):.2f}')
